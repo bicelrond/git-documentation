@@ -1,4 +1,5 @@
 
+[MARKDOWN](https://es.wikipedia.org/wiki/Markdown)
 
 ## Título
 ### Subtítulo
@@ -121,4 +122,40 @@ lugar de una URL, se debe escribir el #NombreDeTuReferencia.
 ~~~
 Quiero que [este enlace](#referencia) vaya al encabezado de referencias cruzadas.
 ~~~
+
+Tablas:
+1. Para especificar los elementos de la cabecera: encerrarlos entre barras verticales `|`, es decir:
+~~~
+| Primera columna | Segunda columna | Tercera columna |
+~~~
+2. Crear una línea adicional debajo para especificar que los encabezados terminan.
+    -  Para eso hay que crear una linea similiar a la anterior, pero en lugar del nombre de la columna, simplemente escribe dos guiones `--`
+
+Cabecera: 
+~~~
+| Primera columna | Segunda columna | Tercera columna |
+| -- | -- | -- |
+~~~
+| Primera columna | Segunda columna | Tercera columna |
+| -- | -- | -- |
+
+Contenido de Tablas:
+1. Estas se crean igual que la línea de cabecera `(| -- | -- | -- |)`.
+
+Tabla completa:
+~~~
+| Primera columna | Segunda columna | Tercera columna |
+| -- | -- | -- |
+| Contenido 1-1 | Contenido 1-2 | Contenido 1-3 |
+| Contenido 2-1 | Contenido 2-2 | Contenido 2-3 |
+| Contenido 3-1 | Contenido 3-2 | Contenido 3-3 |
+~~~
+| Primera columna | Segunda columna | Tercera columna |
+| -- | -- | -- |
+| Contenido 1-1 | Contenido 1-2 | Contenido 1-3 |
+| Contenido 2-1 | Contenido 2-2 | Contenido 2-3 |
+| Contenido 3-1 | Contenido 3-2 | Contenido 3-3 |
+
+
+
 
