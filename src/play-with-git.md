@@ -112,12 +112,50 @@ git commit -m "Eliminacion de archivo"
 git restore --staged <archivo>
 git restore <archivo> 
 ~~~
+***
+### Alias
+Para no escribir el comando completo. Se puede guardar un comando corto en un alias para luego escribirlo:
+>Esto se guardara en `.gitconfig`. Esto se encuentra la mayoria de veces en user, en nuestro dispositivo. 
+~~~
+git config --global alias.ad "add ."
+~~~
+Ahora se puede usar `git ad` y ejecutara el comando completo.
+***
+### TAG
+Esta funcionalidad se usa típicamente para marcar versiones
+de lanzamiento (v1.0, por ejemplo).
 
+#### TAG Ligero:
+Una etiqueta
+ligera no es más que el checksum de un commit guardado en un archivo - no incluye
+más información:
+~~~
+git tag <nombre del tag>
+~~~
+Listar las etiquetas disponibles `git tag`
+### TAG anotada
+La forma más fácil de hacerlo es especificar la opción `-a` cuando ejecutas el comando `git tag`
+~~~
+git tag -a <nombreversion> -m '<mensaje de la etiqueta>'
+~~~
+Para ver la información de la etiqueta junto con el commit que está etiquetado al usar el comando `git show`
 
+### TAG tardio 
+También se puede etiquetar commits mucho tiempo después de haberlos hecho.
+Para etiquetar un **commit**, debes especificar el **checksum** del commit (o parte de él) ***al final del comando***: 
+~~~ 
+git tag -a v1.2 -m '<mensaje de la etiqueta>' <id de commit>
+~~~
 
+Para transferir el tag o tags a un servidor remoto como **GITHUB**:
+~~~
+git push origin [etiqueta] 
+o
+git push origin --tags
+~~~
+Por lo tanto, cuando alguien clone o traiga información de tu repositorio, también obtendrá todas las etiquetas.
 
-
-
-
-
+***
+### END
+Git log muestra el historial de todos los commits que hay, si hay muchos commits saldrá un signo de dos puntos `:` y la línea de donde se encuentra el cursor parpadeando, si presionamos `espacio` mostrará mas commits hasta llegar al último, y cuando termine, dira: `(END)`, para **SALIR**, presionamos `q`
 
