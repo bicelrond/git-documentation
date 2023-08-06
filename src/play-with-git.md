@@ -93,8 +93,25 @@ Para mover un archivo a un nuevo directorio:
     - git status 
     - git commit -m "Move file to new directory"
     - git push origin main
+***
+### Eliminacion de **archivos**
+~~~
+rm <archivo>
+~~~
+Si estamos en un archivo de un repositorio deberemos agregar los cambios a la ***"STAYING AREA"***
 
-
+~~~
+git add <archivo eliminado>
+~~~
+Luego el commit:
+~~~
+git commit -m "Eliminacion de archivo"
+~~~
+***Si antes del commit no queremos eliminar el archivo, aun cuando el archivo este en Staying Area:***
+~~~
+git restore --staged <archivo>
+git restore <archivo> 
+~~~
 
 
 
