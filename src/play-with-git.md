@@ -1,3 +1,4 @@
+# GIT [Revisar documentacion](https://git-scm.com/book/es/v2) 
 ## Create folders from console:
 
 Para **ver el contenido de la carpeta en la que se encuentra el prompt**: Listara el contenido de la carpeta:
@@ -36,7 +37,11 @@ git init
 Revision **ESTADO** general del repositorio:
 ~~~
 git status 
+o
+git status -s  
 ~~~
+`-s` es para no mostrar tanta informacion
+
 Agrega el repositorio a ***"STAYING AREA"***. "Por Confirmar" para luego transformarlo en un **COMMIT** (versión):
 ~~~
 git add <archivo> 
@@ -159,3 +164,8 @@ Por lo tanto, cuando alguien clone o traiga información de tu repositorio, tamb
 ### END
 Git log muestra el historial de todos los commits que hay, si hay muchos commits saldrá un signo de dos puntos `:` y la línea de donde se encuentra el cursor parpadeando, si presionamos `espacio` mostrará mas commits hasta llegar al último, y cuando termine, dira: `(END)`, para **SALIR**, presionamos `q`
 
+***
+### BRANCH O RAMAS
+Las ramas o branch las ocuparemos normalmente cuando trabajemos en equipo o cuando queramos hacer una nueva funcion que no queremos agregar a la rama `main`.
+>Por ejemplo queremos hacer un Login para una nueva pagina web.
+>Entonces para no 
