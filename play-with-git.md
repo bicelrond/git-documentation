@@ -1,6 +1,6 @@
 # GIT [Revisar documentacion](https://git-scm.com/book/es/v2) 
 ## Create folders from console:
-Quiero que [este enlace](##Repositorios) vaya al encabezado de referencias cruzadas.
+Quiero que [este enlace](#Repositorio) vaya al encabezado de referencias cruzadas.
 
 Para **ver el contenido de la carpeta en la que se encuentra el prompt**: Listara el contenido de la carpeta:
 ~~~
@@ -29,6 +29,7 @@ cd <carpeta o directorio>
 mkdir <nombre de carpeta>
 ~~~
 ***
+# Repositorio
 ## Repositorios:
 
 Iniciar un repositorio local:
