@@ -168,4 +168,4 @@ Git log muestra el historial de todos los commits que hay, si hay muchos commits
 ### BRANCH O RAMAS
 Las ramas o branch las ocuparemos normalmente cuando trabajemos en equipo o cuando queramos hacer una nueva funcion que no queremos agregar a la rama `main`.
 >Por ejemplo queremos hacer un Login para una nueva pagina web.
->Entonces para no 
+>Entonces para no usar la rama principal. Hacemos una nueva rama
