@@ -1,11 +1,7 @@
 # GIT [Revisar documentacion](https://git-scm.com/book/es/v2) 
 
 
-<a name="top"></a>
-## Índice de contenidos
-## Índice de contenidos
 
-* [Contenido 1](#item1)
 
 
 ## Comandos Basicos git
@@ -16,6 +12,7 @@
 | cd .. | Un paso atras del promp. | 
 | pwd | Revisar donde estamos ubicados. | 
 | mkdir nomrbecarpeta | Crear carpeta.|
+| touch nombrefichero.py, js, html, css, etc  | Crear archivos vacíos y cambiar marcas de tiempo de archivos o carpetas|
 
 >Tambien se puede utilizar `ls` con el nombre de un directorio para ver el contenido.
 
@@ -30,20 +27,23 @@
 | Color blanco | Archivos (pdf, jpg, doc, md, js, etc.) | 
 
 ***
-## Repositorios:
+## Repositorio:
+### Configuracion:
 
+~~~
+git config --global user.name "name"
+git config --global user.email name@example.com
+~~~
+Combiar nombre de la rama (master a main):
+~~~
+git branch -m nombredelarama
+~~~
+### Comandos basicos repositorio :
+>Normalmente mas usados:
 Iniciar un repositorio local:
 ~~~
 git init 
 ~~~
-Revision **ESTADO** general del repositorio:
-~~~
-git status 
-o
-git status -s  
-~~~
-`-s` es para no mostrar tanta informacion
-
 Agrega el repositorio a ***"STAYING AREA"***. "Por Confirmar" para luego transformarlo en un **COMMIT** (versión):
 ~~~
 git add <archivo> 
@@ -54,8 +54,17 @@ git add .
 ~~~
 Agregar la versión al repositorio. (*-m = mensaje*):
 ~~~
-git commit -m "**Nombre del commit**" <archivo>
+git commit -m "mensajedeconfirmación" <archivo>
 ~~~
+Revision **ESTADO** general del repositorio:
+~~~
+git status 
+o
+git status -s  
+~~~
+`-s` es para no mostrar tanta informacion.
+
+
 1. Revisaremos si se hicieron los cambios con **GIT STATUS**.
 2. Luego revisaremos la version de commit con su identificador unico o **HASH** con su respectiva informacion:
 ~~~
@@ -172,5 +181,3 @@ Las ramas o branch las ocuparemos normalmente cuando trabajemos en equipo o cuan
 >Por ejemplo queremos hacer un Login para una nueva pagina web.
 >Entonces para no usar la rama principal. Hacemos una nueva rama
 
-<a name="item1"></a>
-### Contenido 1

@@ -157,5 +157,15 @@ Tabla completa:
 | Contenido 3-1 | Contenido 3-2 | Contenido 3-3 |
 
 
+Enlaces a la misma pagina
+~~~
+<a name="top"></a>
+## Índice de contenidos
 
+* [Contenido 1](#item1)
 
+<a name="item1"></a>
+### Contenido 1
+
+[Subir](#top)
+~~~
