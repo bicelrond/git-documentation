@@ -1,0 +1,13 @@
+**/.vscode
+**/probandogitignore.md
+#PARA NO TOMAR EN CUENTA EN GIT
+
+# https://github.com/github/gitignore
+
+
+# ignora los archivos terminados en .a *.a
+# pero no lib.a, aun cuando había ignorado los archivos terminados en .a en la línea anterior !lib.a
+# ignora unicamente el archivo TODO de la raiz, no subdir/TODO  /TODO
+# ignora todos los archivos del directorio  build/ 
+# ignora doc/notes.txt, pero no este: doc/server/arch.txt  doc/*.txt
+# ignora todos los archivos .txt del directorio doc/ # doc/**/*.txt
