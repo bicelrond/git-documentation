@@ -1,14 +1,27 @@
 # GIT [Revisar documentacion](https://git-scm.com/book/es/v2) 
-## Create folders from console:
 
-Para **ver el contenido de la carpeta en la que se encuentra el prompt**: Listara el contenido de la carpeta:
-~~~
-ls  
-~~~
-Tambien se puede utilizar ls con una directorio para ver el contenido de una carpeta sin tener que estar dentro de un prompt.
 
+<a name="top"></a>
+## Índice de contenidos
+## Índice de contenidos
+
+* [Contenido 1](#item1)
+
+
+## Comandos Basicos git
+| Comando | Utilidad | 
+| -- | -- | 
+| ls | Ver el contenido del directorio en el que se encuentra el prompt. | 
+| cd directorio | Acceder al directorio. | 
+| cd .. | Un paso atras del promp. | 
+| pwd | Revisar donde estamos ubicados. | 
+| mkdir nomrbecarpeta | Crear carpeta.|
+
+>Tambien se puede utilizar `ls` con el nombre de un directorio para ver el contenido.
+
+***
+### Indentificadores de colores
 **Indentificador de colores, segun tipo de archivo/elemento:**
-
 | Color | Referencia | 
 | -- | -- | 
 | Color azul | Carpetas | 
@@ -16,17 +29,6 @@ Tambien se puede utilizar ls con una directorio para ver el contenido de una car
 | Color azul celeste | Carpetas especiales de Windows | 
 | Color blanco | Archivos (pdf, jpg, doc, md, js, etc.) | 
 
-
-
-**Para acceder a la carpeta:**
-~~~
-cd <carpeta o directorio>
-~~~
-
-**Crear carpeta:**
-~~~
-mkdir <nombre de carpeta>
-~~~
 ***
 ## Repositorios:
 
@@ -169,3 +171,6 @@ Git log muestra el historial de todos los commits que hay, si hay muchos commits
 Las ramas o branch las ocuparemos normalmente cuando trabajemos en equipo o cuando queramos hacer una nueva funcion que no queremos agregar a la rama `main`.
 >Por ejemplo queremos hacer un Login para una nueva pagina web.
 >Entonces para no usar la rama principal. Hacemos una nueva rama
+
+<a name="item1"></a>
+### Contenido 1
