@@ -104,22 +104,19 @@ Ahora se puede usar `git tree` y ejecutara el comando completo.
 
 ### Ignore
 
-Para ver una version del commit anterior al que estamos:
-(Pero pasaremos a un estado "detached HEAD")
+### Deshacer un Archivo Preparado
+Si queremos deshacer los cambios que hemos hecho, volveremos al commit original.
 ~~~
 git checkout <numero de commit al que queremos ir>
 ~~~
-Para no estar en "detached HEAD" y volver a la rama master del ultimo COMMIT:
-~~~
-git checkout master
-~~~
-***
+
 ### Para eliminar un commit:
 Escribir el commit anterior a los cambios que queremos hacer:
 ~~~
 git reset <numer de indentificador>
 ~~~
-Luego hacemos el proceso de **ADD** y luego el **COMMIT**
+### GitHub
+Para subir los archivos al servidor Remoto debemos pasar por los estados de  **ADD** y luego el **COMMIT**.
 
 Para subir los cambios a **GITHUB** :
 ~~~
