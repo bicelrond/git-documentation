@@ -40,6 +40,7 @@ git branch -m nombredelarama
 ~~~
 ### Comandos basicos repositorio :
 >Normalmente mas usados:
+
 Iniciar un repositorio local:
 ~~~
 git init 
@@ -52,10 +53,16 @@ O (si queremos agregar todos los cambios de todos los archivos del **Directorio*
 ~~~
 git add . 
 ~~~
-Agregar la versión al repositorio. (*-m = mensaje*):
+Agregar la versión al repositorio. (**-m = mensaje**):
 ~~~
 git commit -m "mensajedeconfirmación" <archivo>
+o 
+git commit -a -m "amensajedeconfirmación"
 ~~~
+Al agregar `-a` no es necesario hacer un `add .` antes. Se salta el area de preparacion.
+
+### Revisar el Estado de tus Archivos
+
 Revision **ESTADO** general del repositorio:
 ~~~
 git status 
@@ -63,13 +70,40 @@ o
 git status -s  
 ~~~
 `-s` es para no mostrar tanta informacion.
-
-
-1. Revisaremos si se hicieron los cambios con **GIT STATUS**.
+>El comando te indica en cuál rama estás y te informa que no ha variado con respecto a la misma rama en el servidor.
+1. Revisaremos si se hicieron los cambios con `git status`.
+#### Historial se Confirmaciones
 2. Luego revisaremos la version de commit con su identificador unico o **HASH** con su respectiva informacion:
 ~~~
-git log o git log --oneline
+git log 
+o
+git log --oneline
 ~~~
+>El mecanismo que usa Git para generar esta suma de comprobación se conoce como hash SHA-1. Se trata de una cadena de 40 caracteres hexadecimales (0-9 y a-f), y se calcula con base en los contenidos del archivo o estructura del directorio en Git. Por ejemplo:
+~~~
+24b9da6552252987aa493b52f8696cd6d3b00373
+~~~
+>Git guarda todo no por nombre de archivo, sino por el valor hash de sus contenidos.
+
+Tambien se puede hacer variantes de `git log` como :
+
+| Comando log | Funcion | 
+| -- | -- | 
+| -p | Muestra las diferencias introducidas en cada confirmación. | 
+| -2 | Se muestren únicamente las dos últimas entradas del historial. | 
+| -p -2 | Diferencias y ultimas entradas del hitorial. | 
+| --stat: | Estadísticas de cada confirmación. | 
+
+### Alias
+Para no escribir el comando completo. Se puede guardar un comando corto en un alias para luego escribirlo:
+>Esto se guardara en `.gitconfig`. Esto se encuentra la mayoria de veces en `user`, en nuestro dispositivo. 
+~~~
+git config --global alias.tree "log --graph --decorate --all --oneline"
+~~~
+Ahora se puede usar `git tree` y ejecutara el comando completo.
+
+### Ignore
+
 Para ver una version del commit anterior al que estamos:
 (Pero pasaremos a un estado "detached HEAD")
 ~~~
@@ -129,14 +163,7 @@ git restore --staged <archivo>
 git restore <archivo> 
 ~~~
 ***
-### Alias
-Para no escribir el comando completo. Se puede guardar un comando corto en un alias para luego escribirlo:
->Esto se guardara en `.gitconfig`. Esto se encuentra la mayoria de veces en user, en nuestro dispositivo. 
-~~~
-git config --global alias.ad "add ."
-~~~
-Ahora se puede usar `git ad` y ejecutara el comando completo.
-***
+
 ### TAG
 Esta funcionalidad se usa típicamente para marcar versiones
 de lanzamiento (v1.0, por ejemplo).
