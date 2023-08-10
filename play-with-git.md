@@ -105,11 +105,13 @@ Ahora se puede usar `git tree` y ejecutara el comando completo.
 ### Ignore
 
 ### Deshacer un Archivo Preparado
-Si queremos deshacer los cambios que hemos hecho, volveremos al commit original.
+Si queremos deshacer los cambios que hemos hecho, luego de hacer un `add` volveremos al commit original:
 ~~~
 git checkout <numero de commit al que queremos ir>
 ~~~
-
+~~~
+git reset nombre de fichero
+~~~
 ### Para eliminar un commit:
 Escribir el commit anterior a los cambios que queremos hacer:
 ~~~
