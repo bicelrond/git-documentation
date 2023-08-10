@@ -101,22 +101,21 @@ Para no escribir el comando completo. Se puede guardar un comando corto en un al
 git config --global alias.tree "log --graph --decorate --all --oneline"
 ~~~
 Ahora se puede usar `git tree` y ejecutara el comando completo.
-
-### Ignore
-
 ### Deshacer un Archivo Preparado
 Si queremos deshacer los cambios que hemos hecho, luego de hacer un `add` volveremos al commit original:
 ~~~
 git checkout <numero de commit al que queremos ir>
+~~~ 
+### Ignore
+Creamos un fichero:
 ~~~
+touch .gitignore
 ~~~
-git reset nombre de fichero
-~~~
-### Para eliminar un commit:
-Escribir el commit anterior a los cambios que queremos hacer:
-~~~
-git reset <numer de indentificador>
-~~~
+Pondremos los ficheros o rutas que no queramos tener en cuenta.
+>Crear un archivo `.gitignore` antes de comenzar a trabajar es generalmente una buena idea, pues así evitas confirmar accidentalmente archivos que en realidad no quieres incluir en tu repositorio Git.
+
+[GitHub mantiene una extensa lista de archivos gitignore](https://github.com/github/gitignore) 
+
 ### GitHub
 Para subir los archivos al servidor Remoto debemos pasar por los estados de  **ADD** y luego el **COMMIT**.
 
