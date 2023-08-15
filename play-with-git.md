@@ -235,7 +235,8 @@ Git log muestra el historial de todos los commits que hay, si hay muchos commits
 
 ***
 ### BRANCH o ramas
-Las ramas o branch las ocuparemos normalmente cuando trabajemos en equipo o cuando queramos hacer una nueva funcion que no queremos agregar a la rama `main`.
+Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama "por defecto" cuando creamos un repositorio. 
+* Crea nueva rama durante el desarrollo y cuento este terminada, funcionarlas.
 >Por ejemplo queremos hacer un Login para una nueva pagina web.
 >Entonces para no usar la rama principal. Hacemos una nueva rama
 
@@ -250,6 +251,10 @@ Opciones de `git branch`:
 | git branch --no-merged | ramas que contienen trabajos sin fusionar |
 | git branch -d nombredelarama | Forzar eliminacion de la rama |
 
+Una rama nueva no estará disponible para los demás hasta que se suban los cambios (push) de la rama al repositorio:
+~~~
+git push origin <branch>
+~~~
 ### Switch
 Nos moveremos por las ramas del repositorio con:
 ~~~

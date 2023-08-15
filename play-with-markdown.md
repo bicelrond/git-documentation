@@ -160,8 +160,9 @@ Tabla completa:
 Enlaces a la misma pagina
 ~~~
 <a name="top"></a>
-## Índice de contenidos
+# Título de nuestro documento
 
+## Índice de contenidos
 * [Contenido 1](#item1)
 
 <a name="item1"></a>
