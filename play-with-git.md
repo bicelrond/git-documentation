@@ -1,3 +1,4 @@
+<a name="top"></a>
 # GIT [Revisar documentacion](https://git-scm.com/book/es/v2) 
 
 
@@ -26,6 +27,7 @@
 | Color azul celeste | Carpetas especiales de Windows | 
 | Color blanco | Archivos (pdf, jpg, doc, md, js, etc.) | 
 
+[Subir al inicio](#top)
 ***
 ## Repositorio
 ***
@@ -39,6 +41,8 @@ Combiar nombre de la rama (master a main):
 ~~~
 git branch -m nombredelarama
 ~~~
+
+[Subir al inicio](#top)
 ***
 ### Comandos basicos repositorio : 
 >Normalmente mas usados:
@@ -62,8 +66,9 @@ o
 git commit -a -m "amensajedeconfirmación"
 ~~~
 Al agregar `-a` no es necesario hacer un `add .` antes. Se salta el area de preparacion.
-***
 
+[Subir al inicio](#top)
+***
 ### GitHub
 Para subir los archivos al servidor Remoto debemos pasar por los estados de  **ADD** y luego el **COMMIT**.
 
@@ -79,9 +84,9 @@ Clonar un repositorio de ***GITHUB*** :
 git clone <copiamos y pegamos el ssh del repositorio que queremos clonar>
 ~~~
 
+[Subir al inicio](#top)
 ***
 ### Revisar el Estado de tus Archivos
-
 Revision **ESTADO** general del repositorio:
 ~~~
 git status 
@@ -119,6 +124,8 @@ Tambien se puede hacer variantes de `git log` como :
 | -2 | Se muestren únicamente las dos últimas entradas del historial. | 
 | -p -2 | Diferencias y ultimas entradas del hitorial. | 
 | --stat: | Estadísticas de cada confirmación. | 
+
+[Subir al inicio](#top)
 ***
 ## Otros cambios en el repositorio
 ***
@@ -146,6 +153,8 @@ Y si queremos movernos de fichero cualquiera de antes del ultimo commit:
 git checkout numerodefichero
 ~~~
 Podemos usarlo para seguir desde ahi o ver los cambios que hice antes
+
+[Subir al inicio](#top)
 ***
 ### Ignore
 Creamos un fichero:
@@ -157,6 +166,7 @@ Pondremos los ficheros o rutas que no queramos que se añadan automaticamente o 
 
 [GitHub mantiene un repositorio con una extensa lista de archivos gitignore](https://github.com/github/gitignore) 
 ***
+
 ### Reset
 Si queremos eliminar lo que teniamos y empezar desde un commit anterior. Vemos el id del commit al que queremos empezar y escribimos:
 ~~~
@@ -165,6 +175,7 @@ git reset --hard commitalquequeremosir
 ~~~
 Si queremos volver al ultimo commit. Escribimos lo mismo pero con el commit mas nuevo o al que queramos ir.
 
+[Subir al inicio](#top)
 ***
 ### Mover
 Para mover un archivo a un nuevo directorio:
@@ -193,8 +204,9 @@ git commit -m "Eliminacion de archivo"
 git restore --staged nombrefichero
 git restore nombrefichero
 ~~~
-***
 
+[Subir al inicio](#top)
+***
 ### TAG
 Esta funcionalidad se usa típicamente para marcar versiones
 de lanzamiento (v1.0, por ejemplo).
@@ -229,6 +241,7 @@ git push origin --tags
 ~~~
 Por lo tanto, cuando alguien clone o traiga información de tu repositorio, también obtendrá todas las etiquetas.
 
+[Subir al inicio](#top)
 ***
 ### END
 Git log muestra el historial de todos los commits que hay, si hay muchos commits saldrá un signo de dos puntos `:` y la línea de donde se encuentra el cursor parpadeando, si presionamos `espacio` mostrará mas commits hasta llegar al último, y cuando termine, dira: `(END)`, para **SALIR**, presionamos `q`
@@ -281,6 +294,8 @@ Pasos:
 2. Para resolver el conflicto, hay que de elegir manualmente el contenido de uno o de otro lado. Arreglarlo y despues. ***(segun los marcadores de git)***
 3. `git add `para marcar cada archivo modificado.
 4. git commit -m "correccion de conflictos merge rama con rama" .
+
+[Subir al inicio](#top)
  ***
 ### Stash
 Cuando queremos guardar para ir a otro lugar o rama, pero no hacer un commit:
@@ -313,6 +328,7 @@ git clone https://github.com/usuario/repositorio
 * Los cambios se veran en nuestro repositorio pero en el **Repositorio Origen** no.
 * Entonces solicitaremos al dueño del repositorio que vea nuestros cambios para hacer una especia de `MERGE` pero en repositorios distintos. (ejem: Por que son buenos cambios para el proyecto).
 * **Siempre se debe mantener syncronizado con el original** `sync fork` en GUI GitHub.
+
 ### pull request (pr)
 * `contribute` para constribuir con los nuevos cambios para el proyecto.
 * `Create pull request` añadir un commit con un mensaje y descripcion para el receptor.
@@ -328,3 +344,7 @@ git clone https://github.com/usuario/repositorio
 3. Rechazar pero pedir cambios
 * Una vez esta todo **aprovado y revisado**. Hacer un `Merge pull request` desde GitHub. Para agregar los cambios al repositorio principal.
 * ***En el repositorio principal se veran los colaboradores del proyecto***
+
+[Subir al inicio](#top)
+
+***
