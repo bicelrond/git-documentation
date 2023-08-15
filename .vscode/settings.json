@@ -1,5 +1,6 @@
 {
     "markdown.validate.ignoredLinks": [
-        "#item1"
+        "#item1",
+        "#top"
     ]
 }
