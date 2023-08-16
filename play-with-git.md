@@ -2,8 +2,15 @@
 # GIT [Revisar documentacion](https://git-scm.com/book/es/v2) 
 
 
+## **Índice**
+1. [Comandos Basicos Linux](#id1)
+2. [Repositorio](#id2)
+3. [Otros cambios en el repositorio](#id3)
+4. [Flujo colaborativo de GITHUB](#id4)
 
 
+
+<div id='id1' />
 
 ## Comandos Basicos Linux
 | Comando | Utilidad | 
@@ -28,6 +35,9 @@
 | Color blanco | Archivos (pdf, jpg, doc, md, js, etc.) | 
 
 [Subir al inicio](#top)
+
+<div id='id2' />
+
 ***
 ## Repositorio
 ***
@@ -126,6 +136,9 @@ Tambien se puede hacer variantes de `git log` como :
 | --stat: | Estadísticas de cada confirmación. | 
 
 [Subir al inicio](#top)
+
+<div id='id3' />
+
 ***
 ## Otros cambios en el repositorio
 ***
@@ -313,6 +326,9 @@ git stash apply stash@{2}
 `git stash pop` para hacer entrada al guardado y luego eliminarlo.
 
 Para remover un stash ejecutar `git stash drop nombrestash`
+
+<div id='id4' />
+
 ***
 ## Flujo colaborativo de GITHUB
 ***
