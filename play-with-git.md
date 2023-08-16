@@ -99,6 +99,7 @@ Este comando muestra las líneas exactas que fueron añadidas y eliminadas.
 1. Revisaremos si se hicieron los cambios con `git status`.
 ***
 ### Historial se Confirmaciones
+#### Git log
 2. Luego revisaremos la version de commit con su identificador unico o **HASH** con su respectiva informacion:
 ~~~
 git log 
@@ -119,6 +120,16 @@ Tambien se puede hacer variantes de `git log` como :
 | -2 | Se muestren únicamente las dos últimas entradas del historial. | 
 | -p -2 | Diferencias y ultimas entradas del hitorial. | 
 | --stat: | Estadísticas de cada confirmación. | 
+
+#### Git log en ramas
+git puede mostrar las versiones de rammas por separado. Distinto a git log que muestra todo el historial del proyecto.
+
+[Ver mas sobre git en ramas](https://es.stackoverflow.com/questions/496506/como-mostrar-el-log-de-una-rama-espec%C3%ADfica-de-git-sin-mostrar-la-rama-master) 
+
+Mostrar commits que hay en una rama pero en las otras no:
+~~~
+git log --oneline --graph master..ramaquequeremosverloscommits
+~~~
 ***
 ## Otros cambios en el repositorio
 ***
@@ -328,3 +339,4 @@ git clone https://github.com/usuario/repositorio
 3. Rechazar pero pedir cambios
 * Una vez esta todo **aprovado y revisado**. Hacer un `Merge pull request` desde GitHub. Para agregar los cambios al repositorio principal.
 * ***En el repositorio principal se veran los colaboradores del proyecto***
+
