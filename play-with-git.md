@@ -88,8 +88,8 @@ git status
 o
 git status -s  
 ~~~
-`-s` es para no mostrar tanta informacion.
->El comando te indica en cuál rama estás y te informa que no ha variado con respecto a la misma rama en el servidor.
+`-s` solamente muesta los ficheros en los cuales hubieron cambios y el estado en el que se encuentran.
+>El comando te indica en cuál rama estás y te informa que ha variado con respecto a la misma rama en el servidor.
 Tambien podemos usar 
 ~~~
 git diff 
