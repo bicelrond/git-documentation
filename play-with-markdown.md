@@ -159,14 +159,13 @@ Tabla completa:
 
 Enlaces a la misma pagina
 ~~~
-<a name="top"></a>
-# Título de nuestro documento
-
-## Índice de contenidos
-* [Contenido 1](#item1)
-
-<a name="item1"></a>
-### Contenido 1
-
-[Subir](#top)
+**Índice**
+1. [Primer apartado](#id1)
+2. [Segundo apartado](#id2)
+<div id='id1' />
+## Primer apartado
+Texto del primer apartado
+<div id='id2' />
+## Segundo apartado
+Texto del segundo apartado
 ~~~
