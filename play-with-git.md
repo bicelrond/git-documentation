@@ -103,8 +103,8 @@ git status
 o
 git status -s  
 ~~~
-`-s` es para no mostrar tanta informacion.
->El comando te indica en cuál rama estás y te informa que no ha variado con respecto a la misma rama en el servidor.
+`-s` solamente muesta los ficheros en los cuales hubieron cambios y el estado en el que se encuentran.
+>El comando te indica en cuál rama estás y te informa que ha variado con respecto a la misma rama en el servidor.
 Tambien podemos usar 
 ~~~
 git diff 
@@ -114,6 +114,7 @@ Este comando muestra las líneas exactas que fueron añadidas y eliminadas.
 1. Revisaremos si se hicieron los cambios con `git status`.
 ***
 ### Historial se Confirmaciones
+#### Git log
 2. Luego revisaremos la version de commit con su identificador unico o **HASH** con su respectiva informacion:
 ~~~
 git log 
@@ -135,10 +136,22 @@ Tambien se puede hacer variantes de `git log` como :
 | -p -2 | Diferencias y ultimas entradas del hitorial. | 
 | --stat: | Estadísticas de cada confirmación. | 
 
+<<<<<<< HEAD
 [Subir al inicio](#top)
 
 <div id='id3' />
 
+=======
+#### Git log en ramas
+git puede mostrar las versiones de rammas por separado. Distinto a git log que muestra todo el historial del proyecto.
+
+[Ver mas sobre git en ramas](https://es.stackoverflow.com/questions/496506/como-mostrar-el-log-de-una-rama-espec%C3%ADfica-de-git-sin-mostrar-la-rama-master) 
+
+Mostrar commits que hay en una rama pero en las otras no:
+~~~
+git log --oneline --graph master..ramaquequeremosverloscommits
+~~~
+>>>>>>> main
 ***
 ## Otros cambios en el repositorio
 ***
@@ -361,6 +374,9 @@ git clone https://github.com/usuario/repositorio
 * Una vez esta todo **aprovado y revisado**. Hacer un `Merge pull request` desde GitHub. Para agregar los cambios al repositorio principal.
 * ***En el repositorio principal se veran los colaboradores del proyecto***
 
+<<<<<<< HEAD
 [Subir al inicio](#top)
 
 ***
+=======
+>>>>>>> main
