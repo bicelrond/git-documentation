@@ -136,12 +136,10 @@ Tambien se puede hacer variantes de `git log` como :
 | -p -2 | Diferencias y ultimas entradas del hitorial. | 
 | --stat: | Estadísticas de cada confirmación. | 
 
-<<<<<<< HEAD
 [Subir al inicio](#top)
 
 <div id='id3' />
 
-=======
 #### Git log en ramas
 git puede mostrar las versiones de rammas por separado. Distinto a git log que muestra todo el historial del proyecto.
 
@@ -151,7 +149,6 @@ Mostrar commits que hay en una rama pero en las otras no:
 ~~~
 git log --oneline --graph master..ramaquequeremosverloscommits
 ~~~
->>>>>>> main
 ***
 ## Otros cambios en el repositorio
 ***
@@ -374,9 +371,6 @@ git clone https://github.com/usuario/repositorio
 * Una vez esta todo **aprovado y revisado**. Hacer un `Merge pull request` desde GitHub. Para agregar los cambios al repositorio principal.
 * ***En el repositorio principal se veran los colaboradores del proyecto***
 
-<<<<<<< HEAD
 [Subir al inicio](#top)
 
 ***
-=======
->>>>>>> main
