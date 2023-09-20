@@ -1,16 +1,39 @@
 <a name="top"></a>
 # GIT [Revisar documentacion](https://git-scm.com/book/es/v2) 
 
-
-## **Índice**
-1. [Comandos Basicos Linux](#id1)
-2. [Repositorio](#id2)
-3. [Otros cambios en el repositorio](#id3)
-4. [Flujo colaborativo de GITHUB](#id4)
-
-
-
-<div id='id1' />
+- [GIT Revisar documentacion](#git-revisar-documentacion)
+  - [Comandos Basicos Linux](#comandos-basicos-linux)
+    - [Indentificadores de colores](#indentificadores-de-colores)
+  - [Repositorio](#repositorio)
+    - [Configuracion:](#configuracion)
+    - [Comandos basicos repositorio :](#comandos-basicos-repositorio-)
+    - [GitHub](#github)
+    - [Clonar un repositorio:](#clonar-un-repositorio)
+      - [DEPENDENCIAS](#dependencias)
+    - [Revisar el Estado de tus Archivos](#revisar-el-estado-de-tus-archivos)
+    - [Historial se Confirmaciones](#historial-se-confirmaciones)
+      - [Git log](#git-log)
+      - [Git log en ramas](#git-log-en-ramas)
+  - [Otros cambios en el repositorio](#otros-cambios-en-el-repositorio)
+    - [Alias](#alias)
+    - [Deshacer un Archivo Preparado](#deshacer-un-archivo-preparado)
+    - [Ignore](#ignore)
+    - [Reset](#reset)
+    - [Mover](#mover)
+    - [Eliminacion de **archivos**](#eliminacion-de-archivos)
+    - [TAG](#tag)
+      - [TAG Ligero:](#tag-ligero)
+      - [TAG anotada](#tag-anotada)
+      - [TAG tardio](#tag-tardio)
+    - [END](#end)
+    - [BRANCH o ramas](#branch-o-ramas)
+    - [Switch](#switch)
+    - [Merge](#merge)
+    - [Conflictos a raiz de un **MERGE**](#conflictos-a-raiz-de-un-merge)
+    - [Stash](#stash)
+  - [Flujo colaborativo de GITHUB](#flujo-colaborativo-de-github)
+    - [fork](#fork)
+    - [pull request (pr)](#pull-request-pr)
 
 ## Comandos Basicos Linux
 | Comando | Utilidad | 
@@ -35,8 +58,6 @@
 | Color blanco | Archivos (pdf, jpg, doc, md, js, etc.) | 
 
 [Subir al inicio](#top)
-
-<div id='id2' />
 
 ***
 ## Repositorio
@@ -89,10 +110,25 @@ git push origin main
 Nos pedira Clave o Key.
 ***
 ### Clonar un repositorio:
-Clonar un repositorio de ***GITHUB*** :
+1. Copiar la URL del respositorio remoto que deseas clonar ***GITHUB*** :
 ~~~
 git clone <copiamos y pegamos el ssh del repositorio que queremos clonar>
 ~~~
+2. Abrir la terminal.
+3. Crear un directorio para el proyecto que clonaremos.
+4. Situarnos sobre el directorio `(cd, cd ..)`. Ejemplo: 
+  
+   ![Alt text](ejem-repositorio-clonado.png)
+6. Lanzamos el comando para hacer el clon `git clone https://github.com/ .`
+    > El último punto indica que el clon se colocara en la carpeta donde esta situado el terminal.
+ #### DEPENDENCIAS
+Los repositorios clonados, habitualmente tienen ignoradas las dependencias con el archivo `.gitignore`. Estas debemos instalarlas de nuevo en el repositorio clon, en el directorio creado (local).
+
+Para cada lenguaje, existirán comandos para instalar las dependencias (gestor de dependencias) o gestores de dependencias del proyecto.
+
+Por ejemplo: si es de `PHP` dependerá de `Composer`, si es de `NodeJS` (o `Javascript`) dependerá de `npm`.
+
+[VER TAMBIEN](https://desarrolloweb.com/articulos/git-clone-clonar-repositorio.html#:~:text=C%C3%B3mo%20enviar%20cambios%20a%20GitHub%20si%20el%20repositorio%20no%20es%20tuyo%20(v%C3%ADa%20fork)) 
 
 [Subir al inicio](#top)
 ***
@@ -115,7 +151,7 @@ Este comando muestra las líneas exactas que fueron añadidas y eliminadas.
 ***
 ### Historial se Confirmaciones
 #### Git log
-2. Luego revisaremos la version de commit con su identificador unico o **HASH** con su respectiva informacion:
+1. Luego revisaremos la version de commit con su identificador unico o **HASH** con su respectiva informacion:
 ~~~
 git log 
 o
@@ -137,8 +173,6 @@ Tambien se puede hacer variantes de `git log` como :
 | --stat: | Estadísticas de cada confirmación. | 
 
 [Subir al inicio](#top)
-
-<div id='id3' />
 
 #### Git log en ramas
 git puede mostrar las versiones de rammas por separado. Distinto a git log que muestra todo el historial del proyecto.
@@ -336,8 +370,6 @@ git stash apply stash@{2}
 `git stash pop` para hacer entrada al guardado y luego eliminarlo.
 
 Para remover un stash ejecutar `git stash drop nombrestash`
-
-<div id='id4' />
 
 ***
 ## Flujo colaborativo de GITHUB
