@@ -45,6 +45,7 @@
 | mkdir nomrbecarpeta | Crear carpeta.|
 | touch nombrefichero.py, js, html, css, etc  | Crear archivos vacíos y cambiar marcas de tiempo de archivos o carpetas|
 | mv archivo.txt /ruta/de/destino | Mover archivos a directorios o carpetas |
+| cat | Imprime por pantalla el fichero seleccionado |
 >Tambien se puede utilizar `ls` con el nombre de un directorio para ver el contenido.
 
 ***
