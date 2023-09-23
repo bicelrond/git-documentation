@@ -119,8 +119,8 @@ git clone <copiamos y pegamos el ssh del repositorio que queremos clonar>
 3. Crear un directorio para el proyecto que clonaremos.
 4. Situarnos sobre el directorio `(cd, cd ..)`. Ejemplo: 
   
-   ![Alt text](ejem-repositorio-clonado.png)
-6. Lanzamos el comando para hacer el clon `git clone https://github.com/ .`
+   ![Alt text](/img/ejem-repositorio-clonado.png)
+5. Lanzamos el comando para hacer el clon `git clone https://github.com/ .`
     > El último punto indica que el clon se colocara en la carpeta donde esta situado el terminal.
  #### DEPENDENCIAS
 Los repositorios clonados, habitualmente tienen ignoradas las dependencias con el archivo `.gitignore`. Estas debemos instalarlas de nuevo en el repositorio clon, en el directorio creado (local).
